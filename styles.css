@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000000;
+  color: #ffffff;
+  max-width: 1920px;
+}
+
+.inner-container {
+  width: 1440px;
+  margin-inline: auto;
+  margin-top: 70px;
+  margin-bottom: 70px;
+  border: 2px solid white;
+}
+
+.service-title-container {
+  text-align: center;
+}
+.title {
+  font-size: 19px;
+  color: #e9c664;
+}
+.service-title {
+  font-size: 50px;
+  letter-spacing: 5%;
+}
+.service-card-grid {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 50px;
+  margin: 157px 0 60px 72px;
+}
+.service-card {
+  border: 2px solid #e9c664;
+  width: 337px;
+  height: 337px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  padding: 50px;
+}
+.service-card-title {
+  font-size: 20px;
+  letter-spacing: 5%;
+}
+.service-card p {
+  font-size: 16px;
+  text-align: center;
+}
+.explore-btn a {
+  border: 2px solid #e9c664;
+  padding: 15px 20px;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  color: #e9c664;
+}
+.explore-btn {
+  position: relative;
+  left: 260px;
+  margin-top: 30px;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 180px;
+  padding: 60px 72px;
+}
+.card-1,
+.card-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 35px;
+}
+.card-3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 47px;
+}
+.card-title {
+  font-size: 70px;
+  color: #e9c664;
+  font-weight: bold;
+  letter-spacing: 5%;
+}
+.card-title-2 {
+  font-size: 22px;
+  letter-spacing: 5%;
+}
+.banner-container {
+  background: linear-gradient(180deg, #212121 0% 30%, #e9c664 0% 80%);
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 60px;
+  padding: 0 140px;
+  overflow: hidden;
+}
+.banner-content {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+.banner-title {
+  font-size: 70px;
+  letter-spacing: 5%;
+  color: #000000;
+}
+.banner-text {
+  font-size: 16px;
+  color: #000000;
+}
+.banner-btn {
+  font-size: 20px;
+  padding: 15px 20px;
+  background-color: #000000;
+  color: #e9c664;
+  text-decoration: none;
+  font-weight: bold;
+}
+.banner-container img {
+  position: relative;
+  top: 62.5px;
+  right: -3px;
+}
