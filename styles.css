@@ -68,6 +68,9 @@ body {
   justify-content: center;
   padding: 40px 0 184px 0;
 }
+.service-container {
+  padding-top: 70px;
+}
 .title-container {
   text-align: center;
 }
