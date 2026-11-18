@@ -1,0 +1,61 @@
+<header class="hero home-hero">
+      <nav class="site-nav" aria-label="Main navigation">
+        <details class="menu">
+          <summary aria-label="Open navigation menu">
+            <img
+              src="assets/home-BurgerMenu.svg"
+              alt=""
+              width="22"
+              height="20"
+            />
+          </summary>
+          <div class="menu-panel">
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="about.html">About Us</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Contact Us</a>
+          </div>
+        </details>
+        <ul class="nav-links">
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        <a class="button nav-book" href="contact.html#booking">
+          BOOK APPOINTMENT
+        </a>
+      </nav>
+      <div
+        class="emblem"
+        aria-label="Barbershop, shaves and trims, established 2024"
+      >
+        <img
+          src="assets/home-IconScissors.svg"
+          alt=""
+          class="emblem-scissors"
+          width="97.089"
+          height="164.285"
+        />
+        <img
+          src="assets/home-Square.svg"
+          alt=""
+          class="emblem-square"
+          width="431.148"
+          height="506.434"
+        />
+        <h1>BARBERSHOP</h1>
+        <img
+          src="assets/home-IconMustache.svg"
+          alt=""
+          class="emblem-mustache"
+          width="175.98"
+          height="58.6003"
+        />
+        <p class="emblem-tagline">shaves &amp; trims</p>
+        <p class="emblem-est">est.</p>
+        <p class="emblem-year">2024</p>
+      </div>
+    </header>
