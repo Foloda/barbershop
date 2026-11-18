@@ -165,14 +165,18 @@ nav a:hover {
   padding-top: 70px;
   background-image: url(assets/img.png);
 } */
-.title-container {
+
+.service-title-container {
+  text-align: center;
   padding: 100px 0;
+}
+.title-container {
   text-align: center;
 }
-/* .title {
+.title {
   font-size: 19px;
   color: #e9c664;
-} */
+}
 .subtitle-title {
   font-family: "Abril Fatface";
   font-size: 50px;
@@ -303,7 +307,7 @@ nav a:hover {
   top: 62.5px;
   right: -3px;
 }
-
+ /* reviews */
 .container {
   background-color: #ffffff;
   color: black;
@@ -341,6 +345,8 @@ nav a:hover {
   color: #e9c664;
   font-size: 18px;
 }
+
+/*
 .brands {
   background-color: #212121;
 }
