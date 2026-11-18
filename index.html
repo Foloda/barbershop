@@ -7,50 +7,35 @@
     <title>Barbershop</title>
   </head>
   <body>
-    <!-- <header>
-      <details>
-        <summary><span></span><span></span><span></span></summary>
-      </details>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
-        </ul>
-      </nav>
-      <button>book appointment</button>
-    </header> -->
     <header>
       <nav class="nav-bar">
-        <details class="menu">
-          <summary>
+        <input type="checkbox" id="bar-active" />
+        <div>
+          <label for="bar-active" class="open-menu">
             <img
-              src="assets/home-BurgerMenu.svg"
-              alt=""
-              width="22"
-              height="20"
+              src="assets/menu bar icons/burger-menu.svg"
+              alt="Open Menu"
+              width="36px"
+              height="36px"
             />
-          </summary>
-          <div class="menu-panel">
-            <a href="index.html">Home</a>
-            <a href="services.html">Services</a>
-            <a href="about.html">About Us</a>
-            <a href="blog.html">Blog</a>
-            <a href="contact.html">Contact Us</a>
-          </div>
-        </details>
-        <ul class="nav-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
-        </ul>
-        <a class="nav-book-btn" href="contact.html#booking">
-          BOOK APPOINTMENT
-        </a>
+          </label>
+          <label for="bar-active" class="close-menu">
+            <img
+              src="assets/menu bar icons/close.svg"
+              alt="Close Menu"
+              width="36px"
+              height="36px"
+            />
+          </label>
+        </div>
+        <div class="links-container">
+          <a href="#main" class="active">Home</a>
+          <a href="#service">Services</a>
+          <a href="about.html">About Us</a>
+          <a href="blog.html">Blog</a>
+          <a href="#contact">Contact Us</a>
+        </div>
+        <a href="contact.html" class="book-btn">book appointment</a>
       </nav>
     </header>
 
@@ -62,7 +47,7 @@
       </section>
 
       <!-- services -->
-      <section class="service inner-container">
+      <section class="service inner-container" id="service">
         <div class="service-container">
           <div class="title-container">
             <p class="title">OUR TREATMENT</p>
@@ -228,7 +213,7 @@
         <div class="brand-container">
           <div class="brand-title-container">
             <h2 class="brand-title">BRANDS WE CARRY</h2>
-            <p class="brend-text">
+            <p class="brand-text">
               Vestibulum commodo sapien non elit <br />
               porttitor, vitae volutpat nibh mollis. <br />
               Nulla porta risus id neque.
@@ -279,7 +264,7 @@
       </section>
 
       <!-- contacts -->
-      <section class="contacts inner-container">
+      <section class="contacts inner-container" id="contact">
         <div class="contact-container">
           <div class="contact-title-container">
             <h2 class="contact-title">CONTACT US</h2>
@@ -300,7 +285,7 @@
               <h3>ADDRESS</h3>
 
               <a href="https://maps.app.goo.gl/HhTJJDAcmyVaBoXB7"
-                ><p>304 North Cardinal St. Dorchester Center, MA02124</p></a
+                ><p>304 North Cardinal St. Dorchester Center, MA 02124</p></a
               >
             </div>
             <div class="contact-card">

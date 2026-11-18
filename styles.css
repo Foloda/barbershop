@@ -3,6 +3,17 @@
   padding: 0;
   box-sizing: border-box;
 }
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  display: none;
+}
+html,
+body {
+  scrollbar-width: none; /* Firefox */
+}
+html {
+  scroll-behavior: smooth;
+}
 @font-face {
   font-family: "Abril Fatface";
   src: url("assets/fonts/abril-fatface.ttf");
@@ -56,8 +67,88 @@ body {
   background-color: #000000;
   color: #ffffff;
   max-width: 1920px;
+  font-family: "Inter";
+  font-weight: 400;
 }
 
+header {
+  background-color: #000000;
+  position: sticky;
+  top: 0;
+  width: 100%;
+}
+/* navigation burger menu */
+.nav-bar {
+  margin-inline: auto;
+  width: 1440px;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#bar-active {
+  display: none;
+}
+
+.open-menu {
+  cursor: pointer;
+  display: block;
+}
+
+.close-menu {
+  display: none;
+  cursor: pointer;
+}
+
+.links-container {
+  display: none;
+  flex-direction: row;
+  align-items: center;
+}
+
+#bar-active:checked ~ div .open-menu {
+  display: none;
+}
+
+#bar-active:checked ~ div .close-menu {
+  display: block;
+}
+
+#bar-active:checked ~ .links-container {
+  display: flex;
+  background-color: #000000;
+  height: 100%;
+  z-index: 1000;
+}
+
+nav a {
+  height: 100%;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #979797;
+  font-size: 18px;
+  font-weight: 800;
+}
+nav a:hover {
+  background-color: #e9c664;
+  color: #000000;
+}
+.active {
+  color: #ffffff;
+}
+
+.book-btn {
+  font-size: 14px;
+  font-weight: 800;
+  color: #ffffff;
+  background-color: #000000;
+  border: 2px solid #e9c664;
+  padding: 15px 20px;
+  text-transform: uppercase;
+}
 .inner-container {
   width: 1440px;
   margin-inline: auto;
@@ -67,9 +158,11 @@ body {
   display: flex;
   justify-content: center;
   padding: 40px 0 184px 0;
+  /* height: 100vh; */
 }
 .service-container {
   padding-top: 70px;
+  background-image: url(assets/img.png);
 }
 .title-container {
   text-align: center;
@@ -79,6 +172,7 @@ body {
   color: #e9c664;
 }
 .subtitle-title {
+  font-family: "Abril Fatface";
   font-size: 50px;
   letter-spacing: 5%;
 }
@@ -86,7 +180,7 @@ body {
   display: grid;
   grid-template-columns: auto 1fr;
   gap: 50px;
-  margin: 157px 0 60px 72px;
+  margin: 157px 0 0 72px;
 }
 .service-card {
   border: 2px solid #e9c664;
@@ -100,7 +194,9 @@ body {
   padding: 50px;
 }
 .service-card-title {
+  font-family: "Abril Fatface";
   font-size: 20px;
+  font-weight: 400;
   letter-spacing: 5%;
 }
 .service-card p {
@@ -148,12 +244,14 @@ body {
   gap: 47px;
 }
 .card-title {
+  font-family: "Abril Fatface";
   font-size: 70px;
   color: #e9c664;
   font-weight: bold;
   letter-spacing: 5%;
 }
 .card-title-2 {
+  font-family: "Abril Fatface";
   color: #ffffff;
   font-size: 22px;
   letter-spacing: 5%;
@@ -174,7 +272,9 @@ body {
   gap: 35px;
 }
 .banner-title {
-  font-size: 65px;
+  font-family: "Abril Fatface";
+  font-size: 70px;
+  font-weight: 500;
   letter-spacing: 5%;
   color: #000000;
 }
@@ -252,6 +352,8 @@ body {
   gap: 35px;
 }
 .brand-title {
+  font-family: "Abril Fatface";
+  font-weight: 500;
   font-size: 45px;
   color: #ffffff;
   letter-spacing: 5%;
@@ -286,6 +388,8 @@ body {
   text-align: center;
 }
 .contact-title {
+  font-family: "Abril Fatface";
+  font-weight: 500;
   font-size: 50px;
   letter-spacing: 5%;
 }
@@ -307,6 +411,9 @@ body {
 }
 .contact-card h3 {
   font-size: 20px;
+  font-family: "Abril Fatface";
+  font-weight: 500;
+  letter-spacing: 5%;
 }
 .contact-card a {
   text-decoration: none;
