@@ -163,6 +163,7 @@ nav a:hover {
 .service-container {
   padding-top: 70px;
   background-image: url(assets/img.png);
+  background-size: cover;
 }
 .title-container {
   text-align: center;
@@ -425,7 +426,7 @@ nav a:hover {
   font-size: 17px;
   text-align: center;
 }
-.footer p {
+.copyright p {
   font-size: 17px;
   text-align: center;
 }
